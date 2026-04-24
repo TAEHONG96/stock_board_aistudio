@@ -1,0 +1,5 @@
+{
+  "name": "StockBoard",
+  "description": "A comprehensive web-based dashboard for visualizing domestic, international stocks, and ETFs. Features real-time tickers, interactive price charts, community feeds, and a portfolio view, geared towards beginners with a dark mode UI.",
+  "requestFramePermissions": []
+}

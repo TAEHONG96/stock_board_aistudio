@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #11131c;
+  --color-surface: #1d1f29;
+  --color-surface-dim: #11131c;
+  --color-surface-bright: #373943;
+  --color-surface-container-lowest: #0c0e17;
+  --color-surface-container-low: #191b24;
+  --color-surface-container: #1d1f29;
+  --color-surface-container-high: #282933;
+  --color-surface-container-highest: #32343e;
+  
+  --color-on-background: #e1e1ef;
+  --color-on-surface: #e1e1ef;
+  --color-on-surface-variant: #bacbb9;
+  --color-inverse-surface: #e1e1ef;
+  --color-inverse-on-surface: #2e303a;
+  
+  --color-outline: #859585;
+  --color-outline-variant: #3b4a3d;
+  
+  --color-primary: #75ff9e;
+  --color-on-primary: #003918;
+  --color-primary-container: #00e676;
+  --color-on-primary-container: #00612e;
+  
+  --color-secondary: #b0c6ff;
+  --color-on-secondary: #002d6e;
+  --color-secondary-container: #0068ed;
+  --color-on-secondary-container: #f2f3ff;
+  
+  --color-tertiary: #ffe37a;
+  --color-on-tertiary: #3a3000;
+  --color-tertiary-container: #ebc500;
+  
+  --color-market-up: #ff4d4f;
+  --color-market-up-bg: rgba(255, 77, 79, 0.1);
+  --color-market-down: #3182f6;
+  --color-market-down-bg: rgba(49, 130, 246, 0.1);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-sans);
+}
+
+/* Hide scrollbar for horizontal scrolling areas */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Glassmorphism utilities */
+.surface-glass {
+  background-color: rgba(40, 41, 51, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
